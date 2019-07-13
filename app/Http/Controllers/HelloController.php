@@ -13,7 +13,18 @@ class HelloController extends Controller
      */
     public function index()
     {
-        return view('hello');
+        $name ='Duong';
+        $age='21';
+        $address='Ha Noi';
+        $class='PT13312_web';
+        return view('hello',[
+            'ten' => $name,
+            'tuoi' => $age,
+            'diachi'=>$address,
+            'lop'=>$class
+            ]);
+     
+        
     }
 
     /**
