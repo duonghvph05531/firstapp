@@ -15,3 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('hello','HelloController@index');
+Route::get('input','SumController@sumView')->name('sum_view');
+Route::post('sum','SumController@sum')->name('sum');
