@@ -15,3 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('hello','HelloController@index');
+Route::get('students','StudentController@index');
+Route::get('classes','ClassRoomController@index');
+Route::get('admins','AdminController@index');
+Route::get('users','UserController@index');
